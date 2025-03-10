@@ -7,11 +7,11 @@ export default hopeTheme({
   hostname: "https://mister-hope.github.io",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "Rainbow",
+    url: "https://rainbow-cc.github.io/MyBlog/",
   },
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "capybara.jpg",
 
   repo: "vuepress-theme-hope/vuepress-theme-hope",
 
@@ -19,6 +19,8 @@ export default hopeTheme({
 
   // 导航栏
   navbar,
+
+
 
   // 侧边栏
   sidebar,
@@ -31,7 +33,7 @@ export default hopeTheme({
 
   // 博客相关
   blog: {
-    description: "一个前端开发者",
+    description: "后端开发",
     intro: "/intro.html",
     medias: {
       // Baidu: "https://example.com",
@@ -65,10 +67,6 @@ export default hopeTheme({
       // Whatsapp: "https://example.com",
       Youtube: "https://example.com",
       Zhihu: "https://example.com",
-      VuePressThemeHope: {
-        icon: "https://theme-hope-assets.vuejs.press/logo.svg",
-        link: "https://theme-hope.vuejs.press",
-      },
     },
   },
 
@@ -162,6 +160,7 @@ export default hopeTheme({
     // sandpack: true,
   },
 
+
   // 在这里配置主题提供的插件
   plugins: {
     blog: true,
@@ -180,6 +179,11 @@ export default hopeTheme({
     icon: {
       prefix: "fa6-solid:",
     },
+
+    search: {
+      isSearchable: (page) => page.path !== "/",
+      maxSuggestions: 10,
+    }
 
     // 如果你需要 PWA。安装 @vuepress/plugin-pwa 并取消下方注释
     // pwa: {

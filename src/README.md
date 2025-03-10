@@ -2,10 +2,10 @@
 home: true
 layout: BlogHome
 icon: house
-title: 博客主页
+title: 主页
 heroImage: https://theme-hope-assets.vuejs.press/logo.svg
-heroText: 我的博客
-heroFullScreen: true
+heroText: Rainbow
+#heroFullScreen: true
 tagline: 保持热爱，奔赴山海
 projects:
   - icon: folder-open
