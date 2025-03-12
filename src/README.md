@@ -3,7 +3,7 @@ home: true
 layout: BlogHome
 icon: house
 title: 主页
-heroImage: https://theme-hope-assets.vuejs.press/logo.svg
+#heroImage: https://theme-hope-assets.vuejs.press/logo.svg
 heroText: Rainbow
 #heroFullScreen: true
 tagline: 保持热爱，奔赴山海

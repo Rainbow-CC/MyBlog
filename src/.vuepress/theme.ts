@@ -4,16 +4,18 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://mister-hope.github.io",
+  hostname: "https://rainbow-cc.github.io",
 
   author: {
     name: "Rainbow",
     url: "https://rainbow-cc.github.io/MyBlog/",
   },
 
+  // bgImage: "bg.jpg",
+
   logo: "capybara.jpg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "MyBlog",
 
   docsDir: "src",
 
@@ -26,7 +28,7 @@ export default hopeTheme({
   sidebar,
 
   // 页脚
-  footer: "默认页脚",
+  footer: "要快乐~",
   displayFooter: true,
 
   editLink: false,
@@ -37,7 +39,7 @@ export default hopeTheme({
     intro: "/intro.html",
     medias: {
       // Baidu: "https://example.com",
-      // BiliBili: "https://example.com",
+      BiliBili: "https://space.bilibili.com/7958976",
       // Bitbucket: "https://example.com",
       // Dingding: "https://example.com",
       // Discord: "https://example.com",
@@ -47,7 +49,7 @@ export default hopeTheme({
       // Facebook: "https://example.com",
       // Flipboard: "https://example.com",
       // Gitee: "https://example.com",
-      // GitHub: "https://example.com",
+      GitHub: "https://github.com/Rainbow-CC",
       // Gitlab: "https://example.com",
       // Gmail: "mailto:info@example.com",
       // Instagram: "https://example.com",
@@ -65,8 +67,8 @@ export default hopeTheme({
       // Wechat: "https://example.com",
       // Weibo: "https://example.com",
       // Whatsapp: "https://example.com",
-      Youtube: "https://example.com",
-      Zhihu: "https://example.com",
+      // Youtube: "https://example.com",
+      // Zhihu: "https://example.com",
     },
   },
 
