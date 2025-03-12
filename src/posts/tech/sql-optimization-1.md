@@ -1,5 +1,5 @@
 ---
-cover: /assets/images/cover2.jpg
+#cover: /assets/images/cover2.jpg
 icon: pen-to-square
 date: 2025-03-12
 category:
@@ -9,6 +9,7 @@ tags: []
 star: true
 sticky: true
 ---
+# 一次SQL调优的故事
 
 ## 背景介绍
 
