@@ -3,11 +3,9 @@
 icon: pen-to-square
 date: 2025-03-12
 category:
-  - SQL
   - tech
-tags: []
-star: true
-sticky: true
+tags: ["sql"]
+#sticky: true
 ---
 # 一次SQL调优的故事
 

@@ -13,7 +13,7 @@ export default navbar([
         icon: "pen-to-square",
         prefix: "tech/",
         children: [
-          { text: "SQL调优记录1", icon: "pen-to-square", link: "sql-optimization-1" },
+          { text: "SQL调优记录", icon: "pen-to-square", link: "sql-optimization-1" },
           // { text: "苹果2", icon: "pen-to-square", link: "2" },
         ],
       },

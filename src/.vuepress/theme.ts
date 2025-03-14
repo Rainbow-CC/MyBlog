@@ -15,7 +15,7 @@ export default hopeTheme({
 
   logo: "capybara.jpg",
 
-  repo: "MyBlog",
+  repo: "rainbow-cc",
 
   docsDir: "src",
 
@@ -37,6 +37,7 @@ export default hopeTheme({
   blog: {
     description: "后端开发",
     intro: "/intro.html",
+    articlePerPage: 2,
     medias: {
       // Baidu: "https://example.com",
       BiliBili: "https://space.bilibili.com/7958976",
@@ -96,14 +97,11 @@ export default hopeTheme({
     attrs: true,
     codeTabs: true,
     component: true,
-    demo: true,
-    figure: true,
     gfm: true,
     imgLazyload: true,
     imgSize: true,
     include: true,
     mark: true,
-    plantuml: true,
     spoiler: true,
     stylize: [
       {
