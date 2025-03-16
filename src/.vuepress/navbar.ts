@@ -14,7 +14,7 @@ export default navbar([
         prefix: "tech/",
         children: [
           { text: "SQL调优记录", icon: "pen-to-square", link: "sql-optimization-1" },
-          // { text: "苹果2", icon: "pen-to-square", link: "2" },
+          { text: "信托系统介绍", icon: "pen-to-square", link: "family-trust-system" },
         ],
       },
     ],
