@@ -4,11 +4,11 @@ home: true
 layout: BlogHome
 icon: house
 title: 主页
-#bgImage: /assets/images/cover1.jpg
-#heroImage: https://theme-hope-assets.vuejs.press/logo.svg
+bgImage: /assets/images/cover4.jpg
+# heroImage: /assets/images/backimage.jpg
 heroText: Rainbow
 #heroFullScreen: true
-tagline: 保持热爱，奔赴山海
+tagline: keep loving, keep moving
 projects:
   - icon: folder-open
     name: 我的Github
