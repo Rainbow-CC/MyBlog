@@ -10,6 +10,11 @@ export default sidebar({
       prefix: "posts/",
       children: "structure",
     },
+    {
+      text: "Mermaid 示例",
+      icon: "sitemap",
+      link: "demo/mermaid-demo",
+    },
     "intro",
   ],
 });
