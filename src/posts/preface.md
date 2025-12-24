@@ -1,8 +1,8 @@
 ---
 icon: circle-info
-cover: /assets/images/cover3.jpg
 sticky: true
 ---
-# 写在前面
+# 关于这个博客
 
-这是我想说的话：
+- 记录一下人生的感悟。
+- 一片自由的天地。

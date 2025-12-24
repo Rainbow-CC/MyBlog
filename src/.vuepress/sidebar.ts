@@ -1,20 +1,26 @@
-import { sidebar } from "vuepress-theme-hope";
+import {sidebar} from "vuepress-theme-hope";
 
 export default sidebar({
-  "/": [
-    // 这里表示主页
-    "",
-    {
-      text: "文章",
-      icon: "book",
-      prefix: "posts/",
-      children: "structure",
-    },
-    {
-      text: "Mermaid 示例",
-      icon: "sitemap",
-      link: "demo/mermaid-demo",
-    },
-    "intro",
-  ],
+    "/": [
+        // 这里表示主页
+        "intro",
+        {
+            text: "技术",
+            icon: "book",
+            prefix: "posts/tech/",
+            children: "structure",
+        },
+        {
+            text: "Demo",
+            icon: "sitemap",
+            prefix: "posts/demo/",
+            children: "structure",
+        },
+        // {
+        //   text: "Mermaid 示例",
+        //   icon: "sitemap",
+        //   link: "demo/mermaid-demo",
+        // },
+
+    ],
 });

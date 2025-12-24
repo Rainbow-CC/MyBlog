@@ -4,24 +4,25 @@ home: true
 layout: BlogHome
 icon: house
 title: 主页
+# picture base location is: /src/public/
 bgImage: /assets/images/cover4.jpg
 # heroImage: /assets/images/backimage.jpg
 heroText: Rainbow
 #heroFullScreen: true
 tagline: keep loving, keep moving
+
 projects:
   - icon: folder-open
     name: 我的Github
-    desc: 一些项目
+    desc: Github repository
     link: https://github.com/Rainbow-CC
+  - icon: folder-open
+    name: 文章列表
+    desc: 本站文章
+    link: /posts/
 
-#
-  - icon: link
-    name: 链接名称
-    desc: 链接详细描述
-    link: https://链接地址
 highlights:
-  - header: 易于安装
+  - header: --
     image: /assets/image/box.svg
     bgImage: https://theme-hope-assets.vuejs.press/bg/3-light.svg
     bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
@@ -50,5 +51,5 @@ highlights:
 #    desc: 自定义详细介绍
 #    link: https://你的自定义链接
 
-footer: 要快乐！
+footer: 人生得意需尽欢
 ---
