@@ -14,6 +14,7 @@ export default hopeTheme({
   // bgImage: "bg.jpg",
 
   logo: "capybara.jpg",
+  logoDark: "capybara-dark.png",
 
   repo: "rainbow-cc",
 

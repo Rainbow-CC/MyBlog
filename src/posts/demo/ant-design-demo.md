@@ -13,7 +13,7 @@ tag:
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import { Pie, Column, Line, Bar } from '@antv/g2plot'
+import { Pie, Column, Line, Bar, G2 } from '@antv/g2plot'
 
 const pieContainer = ref(null);
 const columnContainer = ref(null);
@@ -33,6 +33,18 @@ const dataSource = [
 ];
 
 onMounted(() => {
+  // 注册一个背景透明的暗色主题
+  const darkTheme = G2.getTheme('dark');
+  G2.registerTheme('transparent-dark', {
+    ...darkTheme,
+    background: 'transparent',
+  });
+
+  // 获取当前主题
+  const getTheme = () => document.documentElement.getAttribute('data-theme') === 'dark' ? 'transparent-dark' : 'default';
+  
+  const charts = [];
+
   // 饼图渲染
   if(pieContainer.value) {
     const data = [
@@ -48,6 +60,7 @@ onMounted(() => {
       angleField: 'value',
       colorField: 'type',
       radius: 0.8,
+      theme: getTheme(),
       label: {
         type: 'outer',
         content: '{name} {percentage}',
@@ -56,6 +69,7 @@ onMounted(() => {
     });
 
     piePlot.render();
+    charts.push(piePlot);
   }
 
   // 柱状图渲染
@@ -75,6 +89,7 @@ onMounted(() => {
       data: columnData,
       xField: 'type',
       yField: 'sales',
+      theme: getTheme(),
       label: {
         position: 'middle',
         style: {
@@ -91,6 +106,7 @@ onMounted(() => {
     });
 
     columnPlot.render();
+    charts.push(columnPlot);
   }
 
   // 折线图渲染
@@ -111,6 +127,7 @@ onMounted(() => {
       data: lineData,
       xField: 'year',
       yField: 'value',
+      theme: getTheme(),
       label: {},
       point: {
         size: 5,
@@ -124,6 +141,7 @@ onMounted(() => {
     });
 
     linePlot.render();
+    charts.push(linePlot);
   }
 
   // 甘特图 (使用 Bar 实现)
@@ -134,8 +152,6 @@ onMounted(() => {
       { task: '任务三', startTime: '13:00', endTime: '15:00', status: '未开始' },
     ];
     
-    // 为了简单展示，这里将时间转换为数字刻度，实际项目可能需要更复杂的时间处理
-    // 这里简单映射：08:00 -> 8, 10:00 -> 10
     const processData = data.map(d => ({
       task: d.task,
       range: [parseInt(d.startTime.split(':')[0]), parseInt(d.endTime.split(':')[0])],
@@ -144,14 +160,14 @@ onMounted(() => {
 
     const barPlot = new Bar(ganttContainer.value, {
       data: processData,
-      xField: 'range', // x轴表示时间范围 (数值区间)
+      xField: 'range',
       yField: 'task',
       seriesField: 'status',
-      isRange: true, // 开启区间条形图
+      isRange: true,
+      theme: getTheme(),
       label: {
         position: 'middle',
         content: (item) => {
-             // 找到原始数据中的时间字符串
              const original = data.find(d => d.task === item.task);
              return `${original.startTime} - ${original.endTime}`;
         },
@@ -170,7 +186,21 @@ onMounted(() => {
     });
 
     barPlot.render();
+    charts.push(barPlot);
   }
+
+  // 监听主题变化
+  const observer = new MutationObserver(() => {
+    const currentTheme = getTheme();
+    charts.forEach(chart => {
+      chart.update({ theme: currentTheme });
+    });
+  });
+
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['data-theme']
+  });
 });
 </script>
 
