@@ -1,1 +1,7 @@
 // place your custom styles here
+
+.el-slider__button {
+  &:focus {
+    outline: none !important;
+  }
+}

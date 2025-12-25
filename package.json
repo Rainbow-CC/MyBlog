@@ -20,6 +20,8 @@
     "vuepress-theme-hope": "2.0.0-rc.73"
   },
   "dependencies": {
+    "ant-design-vue": "^4.2.6",
+    "element-plus": "^2.13.0",
     "mermaid": "^11.12.2"
   }
 }
