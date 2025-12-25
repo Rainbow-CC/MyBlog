@@ -52,7 +52,7 @@ export default hopeTheme({
       // Gitee: "https://example.com",
       GitHub: "https://github.com/Rainbow-CC",
       // Gitlab: "https://example.com",
-      // Gmail: "mailto:info@example.com",
+      Gmail: "mailto:o77088826@gmail.com",
       // Instagram: "https://example.com",
       // Lark: "https://example.com",
       // Lines: "https://example.com",

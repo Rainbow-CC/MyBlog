@@ -1,5 +1,9 @@
 // place your custom styles here
 
+:root {
+  --sidebar-width: 22rem;
+}
+
 .el-slider__button {
   &:focus {
     outline: none !important;

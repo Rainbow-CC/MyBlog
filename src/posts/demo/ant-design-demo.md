@@ -12,7 +12,13 @@ tag:
 已全局注册 Ant Design Vue，可以直接使用组件。
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
+import { Pie, Column, Line, Bar } from '@antv/g2plot'
+
+const pieContainer = ref(null);
+const columnContainer = ref(null);
+const lineContainer = ref(null);
+const ganttContainer = ref(null);
 
 const columns = [
   { title: '技术栈', dataIndex: 'name', key: 'name' },
@@ -25,6 +31,147 @@ const dataSource = [
   { key: '2', name: 'TypeScript', level: '熟练', category: 'Language' },
   { key: '3', name: 'Ant Design', level: '熟练', category: 'UI Library' },
 ];
+
+onMounted(() => {
+  // 饼图渲染
+  if(pieContainer.value) {
+    const data = [
+      { type: '前端', value: 40 },
+      { type: '后端', value: 30 },
+      { type: 'DevOps', value: 20 },
+      { type: '设计', value: 10 },
+    ];
+
+    const piePlot = new Pie(pieContainer.value, {
+      appendPadding: 10,
+      data,
+      angleField: 'value',
+      colorField: 'type',
+      radius: 0.8,
+      label: {
+        type: 'outer',
+        content: '{name} {percentage}',
+      },
+      interactions: [{ type: 'element-active' }],
+    });
+
+    piePlot.render();
+  }
+
+  // 柱状图渲染
+  if(columnContainer.value) {
+    const columnData = [
+      { type: '1月', sales: 38 },
+      { type: '2月', sales: 52 },
+      { type: '3月', sales: 61 },
+      { type: '4月', sales: 145 },
+      { type: '5月', sales: 48 },
+      { type: '6月', sales: 38 },
+      { type: '7月', sales: 38 },
+      { type: '8月', sales: 38 },
+    ];
+
+    const columnPlot = new Column(columnContainer.value, {
+      data: columnData,
+      xField: 'type',
+      yField: 'sales',
+      label: {
+        position: 'middle',
+        style: {
+          fill: '#FFFFFF',
+          opacity: 0.6,
+        },
+      },
+      xAxis: {
+        label: {
+          autoHide: true,
+          autoRotate: false,
+        },
+      },
+    });
+
+    columnPlot.render();
+  }
+
+  // 折线图渲染
+  if(lineContainer.value) {
+    const lineData = [
+      { year: '1991', value: 3 },
+      { year: '1992', value: 4 },
+      { year: '1993', value: 3.5 },
+      { year: '1994', value: 5 },
+      { year: '1995', value: 4.9 },
+      { year: '1996', value: 6 },
+      { year: '1997', value: 7 },
+      { year: '1998', value: 9 },
+      { year: '1999', value: 13 },
+    ];
+
+    const linePlot = new Line(lineContainer.value, {
+      data: lineData,
+      xField: 'year',
+      yField: 'value',
+      label: {},
+      point: {
+        size: 5,
+        shape: 'diamond',
+        style: {
+          fill: 'white',
+          stroke: '#5B8FF9',
+          lineWidth: 2,
+        },
+      },
+    });
+
+    linePlot.render();
+  }
+
+  // 甘特图 (使用 Bar 实现)
+  if(ganttContainer.value) {
+    const data = [
+      { task: '任务一', startTime: '08:00', endTime: '10:00', status: '已完成' },
+      { task: '任务二', startTime: '10:00', endTime: '12:00', status: '进行中' },
+      { task: '任务三', startTime: '13:00', endTime: '15:00', status: '未开始' },
+    ];
+    
+    // 为了简单展示，这里将时间转换为数字刻度，实际项目可能需要更复杂的时间处理
+    // 这里简单映射：08:00 -> 8, 10:00 -> 10
+    const processData = data.map(d => ({
+      task: d.task,
+      range: [parseInt(d.startTime.split(':')[0]), parseInt(d.endTime.split(':')[0])],
+      status: d.status
+    }));
+
+    const barPlot = new Bar(ganttContainer.value, {
+      data: processData,
+      xField: 'range', // x轴表示时间范围 (数值区间)
+      yField: 'task',
+      seriesField: 'status',
+      isRange: true, // 开启区间条形图
+      label: {
+        position: 'middle',
+        content: (item) => {
+             // 找到原始数据中的时间字符串
+             const original = data.find(d => d.task === item.task);
+             return `${original.startTime} - ${original.endTime}`;
+        },
+        style: {
+            fill: '#fff',
+        }
+      },
+      xAxis: {
+        min: 6,
+        max: 18,
+        tickInterval: 2,
+        title: {
+            text: '时间 (小时)'
+        }
+      }
+    });
+
+    barPlot.render();
+  }
+});
 </script>
 
 ## 1. 基础按钮
@@ -101,6 +248,22 @@ Ant Design Vue 核心库主要提供 UI 组件。对于简单的环形比例展�
     :bordered="false"
   />
 </div>
+
+## 6. G2Plot 柱状图示例
+
+<div ref="columnContainer" style="height: 400px;"></div>
+
+## 7. G2Plot 折线图示例
+
+<div ref="lineContainer" style="height: 400px;"></div>
+
+## 8. G2Plot 甘特图示例 (使用区间条形图)
+
+<div ref="ganttContainer" style="height: 300px;"></div>
+
+## 9. G2Plot 饼图示例
+
+<div ref="pieContainer" style="height: 400px;"></div>
 
 <style>
 /* 局部样式：学术三线表 (严格三线版) */
