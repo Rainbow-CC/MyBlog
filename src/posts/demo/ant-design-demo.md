@@ -202,6 +202,13 @@ onMounted(() => {
     attributeFilter: ['data-theme']
   });
 });
+
+// 组件化演示数据
+const componentPieData = [
+  { type: '组件化', value: 50 },
+  { type: '复用性', value: 30 },
+  { type: '维护性', value: 20 },
+];
 </script>
 
 ## 1. 基础按钮
@@ -294,6 +301,12 @@ Ant Design Vue 核心库主要提供 UI 组件。对于简单的环形比例展�
 ## 9. G2Plot 饼图示例
 
 <div ref="pieContainer" style="height: 400px;"></div>
+
+## 10. 组件化复用示例 (New)
+
+这里直接使用全局注册的 `<G2PieChart />` 组件，代码极其简洁，且自动支持暗色模式。
+
+<G2PieChart :data="componentPieData" />
 
 <style>
 /* 局部样式：学术三线表 (严格三线版) */
