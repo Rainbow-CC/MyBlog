@@ -16,6 +16,12 @@ export default sidebar({
             prefix: "posts/demo/",
             children: "structure",
         },
+        {
+            text: "Chat",
+            icon: "sitemap",
+            prefix: "posts/chat/",
+            children: "structure",
+        },
         // {
         //   text: "Mermaid 示例",
         //   icon: "sitemap",

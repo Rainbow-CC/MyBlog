@@ -1,4 +1,3 @@
-
 node_modules/
 src/.vuepress/.cache/
 src/.vuepress/.temp/
@@ -7,3 +6,4 @@ src/.vuepress/dist/
 .idea/modules.xml
 .idea/MyBlog.iml
 .idea/vcs.xml
+.idea/
