@@ -11,6 +11,12 @@ export default sidebar({
             children: "structure",
         },
         {
+            text: "英语学习",
+            icon: "language",
+            prefix: "posts/English/",
+            children: "structure",
+        },
+        {
             text: "Demo",
             icon: "sitemap",
             prefix: "posts/demo/",
