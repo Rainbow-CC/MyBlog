@@ -14,7 +14,8 @@ tags: ["system"]
 ## 系统简介
 
 前后端分离系统，前端页面为原家族信托业务管理系统扩建，传统Java web项目。使用的技术组件包括Nginx+keepalived、redis、SpringCloud Gateway、Eureka、Apollo、定时任务调度框架等，技术架构图如下：
-![](/assets/business/信托技术架构.png)
+
+![技术架构图](/assets/business/信托技术架构.png)
 
 ## 系统设计分析
 
