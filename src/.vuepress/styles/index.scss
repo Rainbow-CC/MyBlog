@@ -9,3 +9,28 @@
     outline: none !important;
   }
 }
+
+// 1. 隐藏博客统计信息栏（文章、分类、标签等）中的图标
+.vp-blog-infos .vp-icon,
+.vp-blog-infos .icon,
+.vp-blog-infos svg,
+.timeline-list-wrapper .vp-icon,
+.timeline-list-wrapper svg,
+.blogger-info-wrapper .vp-icon,
+.blogger-info-wrapper .icon,
+.blogger-info-wrapper svg {
+  display: none !important;
+}
+
+// 2. 精准隐藏“文章”统计项
+// 在 Theme Hope 中，文章、分类、标签、时间轴分别对应以下类名
+.vp-blog-infos .vp-blog-article {
+  display: none !important;
+}
+
+// 确保其他项（分类、标签、时间轴）显示
+.vp-blog-infos .vp-blog-category,
+.vp-blog-infos .vp-blog-tag,
+.vp-blog-infos .vp-blog-timeline {
+  display: inline-flex !important;
+}
