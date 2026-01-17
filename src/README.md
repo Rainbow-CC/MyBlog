@@ -53,3 +53,5 @@ highlights:
 
 footer: 人生得意需尽欢
 ---
+
+<CoolCube />

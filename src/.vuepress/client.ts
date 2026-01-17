@@ -5,6 +5,7 @@ import G2PieChart from "./components/G2PieChart.vue";
 import CounterDemo from "./components/CounterDemo.vue";
 import ImageStack from "./components/ImageStack.vue";
 import FrameImage from "./components/FrameImage.vue";
+import CoolCube from "./components/CoolCube.vue";
 
 export default defineClientConfig({
   enhance({ app }) {
@@ -13,5 +14,6 @@ export default defineClientConfig({
     app.component("CounterDemo", CounterDemo);
     app.component("ImageStack", ImageStack);
     app.component("FrameImage", FrameImage);
+    app.component("CoolCube", CoolCube);
   },
 });
