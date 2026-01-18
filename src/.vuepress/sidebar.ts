@@ -28,6 +28,12 @@ export default sidebar({
             prefix: "posts/chat/",
             children: "structure",
         },
+        {
+            text: "面试",
+            icon: "briefcase",
+            prefix: "posts/interview/",
+            children: "structure",
+        },
         // {
         //   text: "Mermaid 示例",
         //   icon: "sitemap",
