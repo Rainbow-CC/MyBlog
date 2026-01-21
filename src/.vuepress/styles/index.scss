@@ -34,3 +34,48 @@
 .vp-blog-infos .vp-blog-timeline {
   display: inline-flex !important;
 }
+
+// 缩放 Mermaid 图表
+.mermaid-small {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  width: 100% !important;
+  margin: 1.5rem 0 !important;
+  
+  & > div, .mermaid {
+    width: 60% !important;
+    max-width: 60% !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin: 0 auto !important;
+  }
+
+  svg {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+  }
+}
+
+.mermaid-medium {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  width: 100% !important;
+  margin: 1.5rem 0 !important;
+
+  & > div, .mermaid {
+    width: 80% !important;
+    max-width: 80% !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin: 0 auto !important;
+  }
+
+  svg {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+  }
+}
