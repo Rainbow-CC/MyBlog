@@ -2,8 +2,8 @@
 title: Ant Design Vue 组件演示
 date: 2025-12-25
 category:
-  - Demo
-tag:
+  - Technical
+tags:
   - Ant Design Vue
 ---
 

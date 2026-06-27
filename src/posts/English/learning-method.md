@@ -2,8 +2,8 @@
 title: 英文阅读重构：从“逐字解码”到“谓语撞击”
 date: 2026-01-15
 category:
-  - 英语学习
-tag:
+  - English learning
+tags:
   - 阅读方法
 ---
 

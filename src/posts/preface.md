@@ -1,6 +1,8 @@
 ---
 icon: circle-info
 sticky: true
+category:
+  - Technical
 ---
 # 关于这个博客
 

@@ -2,8 +2,8 @@
 title: 英语国际音标（IPA）完全使用指南
 date: 2026-01-15
 category:
-  - 英语学习
-tag:
+  - English learning
+tags:
   - 音标
 ---
 

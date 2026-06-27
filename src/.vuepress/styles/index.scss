@@ -10,29 +10,67 @@
   }
 }
 
-// 1. 隐藏博客统计信息栏（文章、分类、标签等）中的图标
-.vp-blog-infos .vp-icon,
-.vp-blog-infos .icon,
-.vp-blog-infos svg,
-.timeline-list-wrapper .vp-icon,
-.timeline-list-wrapper svg,
-.blogger-info-wrapper .vp-icon,
-.blogger-info-wrapper .icon,
-.blogger-info-wrapper svg {
-  display: none !important;
+// 美化首页右侧博客类型切换入口
+.vp-blog-infos .vp-blog-type-switcher {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 0.45rem;
+  margin: 0.75rem 0 1rem;
 }
 
-// 2. 精准隐藏“文章”统计项
-// 在 Theme Hope 中，文章、分类、标签、时间轴分别对应以下类名
-.vp-blog-infos .vp-blog-article {
-  display: none !important;
+.vp-blog-infos .vp-blog-type-button {
+  padding: 0;
+  border: none;
+  background: transparent;
 }
 
-// 确保其他项（分类、标签、时间轴）显示
-.vp-blog-infos .vp-blog-category,
-.vp-blog-infos .vp-blog-tag,
-.vp-blog-infos .vp-blog-timeline {
-  display: inline-flex !important;
+.vp-blog-infos .vp-blog-type-icon-wrapper {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 3.15rem;
+  height: 3.2rem;
+  padding: 0.35rem 0.15rem;
+  border-radius: 6px;
+  color: var(--vp-c-text-mute);
+  transition:
+    color var(--vp-t-color),
+    background var(--vp-t-color),
+    transform var(--vp-t-transform);
+}
+
+.vp-blog-infos .vp-blog-type-icon-wrapper svg,
+.vp-blog-infos .vp-blog-type-icon-wrapper .icon,
+.vp-blog-infos .vp-blog-type-icon-wrapper .vp-icon {
+  display: block !important;
+  width: 1.45rem;
+  height: 1.45rem;
+  margin-bottom: 0.28rem;
+  color: currentColor;
+}
+
+.vp-blog-infos .vp-blog-type-icon-wrapper::after {
+  content: attr(aria-label);
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.vp-blog-infos .vp-blog-type-button:hover .vp-blog-type-icon-wrapper,
+.vp-blog-infos .vp-blog-type-icon-wrapper.active {
+  background: var(--vp-c-accent-soft);
+  color: var(--vp-c-accent);
+  transform: translateY(-2px);
+}
+
+// 避免右侧时间轴内容过长时撑高页面
+.vp-blog-infos .timeline-list-wrapper .timeline-content {
+  max-height: 16rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
 }
 
 // 缩放 Mermaid 图表

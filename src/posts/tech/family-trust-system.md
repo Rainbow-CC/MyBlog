@@ -3,7 +3,7 @@
 icon: pen-to-square
 date: 2025-03-16
 category:
-  - tech
+  - Technical
 tags: ["system"]
 #article: false
 #sticky: true

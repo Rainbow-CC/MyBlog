@@ -3,8 +3,8 @@ title: Mermaid 图表示例
 icon: sitemap
 date: 2025-12-23
 category:
-  - 示例
-tag:
+  - Technical
+tags:
   - mermaid
   - 图表
 ---

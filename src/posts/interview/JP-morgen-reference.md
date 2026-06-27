@@ -3,7 +3,7 @@ title: 摩根大通(JP Morgan)面试指南
 icon: briefcase
 date: 2026-01-18
 category:
-  - Interview
+  - Technical
 tags:
   - JP Morgan
   - Interview

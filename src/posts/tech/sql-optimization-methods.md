@@ -2,6 +2,8 @@
 icon: pen-to-square
 title: SQL调优常见手段
 date: 2024-01-15
+category:
+  - Technical
 tags: [SQL, 调优, 数据库]
 ---
 

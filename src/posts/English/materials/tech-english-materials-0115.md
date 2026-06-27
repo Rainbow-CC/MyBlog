@@ -2,8 +2,8 @@
 title: 每日技术英语素材 (01/15)
 date: 2026-01-15
 category:
-  - 英语学习
-tag:
+  - English learning
+tags:
   - 每日素材
 ---
 

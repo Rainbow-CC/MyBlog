@@ -3,8 +3,8 @@ title: AI时代的一些思考
 icon: pen-to-square
 date: 2025-12-23
 category:
-  - 杂谈
-tag:
+  - Technical
+tags:
   - 杂谈
 ---
 

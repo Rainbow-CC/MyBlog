@@ -4,7 +4,7 @@ title: redis-delay-queue
 icon: pen-to-square
 date: 2026-01-21
 category:
-  - tech
+  - Technical
 tags: ["redis"]
 ---
 

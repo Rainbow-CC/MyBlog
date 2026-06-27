@@ -2,8 +2,8 @@
 title: 每日技术英语素材 (01/20)
 date: 2026-01-20
 category:
-  - 英语学习
-tag:
+  - English learning
+tags:
   - 每日素材
 ---
 # Daily English Training - 2026/01/20

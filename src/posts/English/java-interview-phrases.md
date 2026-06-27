@@ -2,8 +2,8 @@
 title: 金融外企 Java 面试必备：高频口语句式总结
 date: 2026-01-15
 category:
-  - 英语学习
-tag:
+  - English learning
+tags:
   - 面试
   - 职场英语
   - Java

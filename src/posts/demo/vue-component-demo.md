@@ -2,8 +2,8 @@
 title: Vue 组件使用演示
 date: 2026-01-16
 category:
-  - Demo
-tag:
+  - Technical
+tags:
   - Vue
   - Component
 ---
@@ -74,4 +74,3 @@ export default defineClientConfig({
   <FrameImage src="/assets/images/cover2.jpg" width="48%" />
   <FrameImage src="/assets/images/cover3.jpg" width="48%" />
 </div>
-
