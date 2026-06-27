@@ -1,22 +1,24 @@
 ---
 #cover: /assets/images/cover2.jpg
 icon: pen-to-square
+title: Family Trust System Architecture
 date: 2025-03-16
 category:
   - Technical
-tags: ["system"]
+tags: ["system", "architecture"]
 #article: false
 #sticky: true
 ---
-# 家庭信托技术架构
+# Family Trust System Architecture
 
-2023年信托三分类新规出台，公司开始建设家庭服务信托系统，承接新的服务信托业务。
-## 系统简介
+Following the release of the new trust classification regulations in 2023, the company began building a family service trust system to support the new service trust business line.
 
-前后端分离系统，前端页面为原家族信托业务管理系统扩建，传统Java web项目。使用的技术组件包括Nginx+keepalived、redis、SpringCloud Gateway、Eureka、Apollo、定时任务调度框架等，技术架构图如下：
+## System Overview
 
-![技术架构图](/assets/business/信托技术架构.png)
+The application adopts a frontend-backend separation architecture. The frontend UI is an expansion of the existing family trust business management system, built as a traditional Java web application. The technical stack and key components include Nginx + Keepalived (for high availability), Redis, Spring Cloud Gateway, Eureka, Apollo (for configuration management), and a scheduled job framework. The technical architecture diagram is shown below:
 
-## 系统设计分析
+![Technical Architecture Diagram](/assets/business/信托技术架构.png)
 
-未完待续...
+## System Design Analysis
+
+To be continued...

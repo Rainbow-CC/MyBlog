@@ -12,6 +12,10 @@ heroText: Rainbow
 tagline: keep loving, keep moving
 
 projects:
+  - icon: utensils
+    name: Cook Book
+    desc: 我的在线食谱作品
+    link: https://my-cook-book-fawn.vercel.app
   - icon: folder-open
     name: 我的Github
     desc: Github repository
