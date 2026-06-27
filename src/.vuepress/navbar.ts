@@ -2,6 +2,11 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/",
+  {
+    text: "作品集",
+    icon: "briefcase",
+    link: "/portfolio/",
+  },
   // "/demo/",
   // {
   //   text: "文章",

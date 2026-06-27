@@ -121,3 +121,107 @@ body {
     max-width: 100% !important;
   }
 }
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.portfolio-card {
+  display: flex;
+  min-height: 9rem;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid var(--vp-c-border);
+  border-radius: 8px;
+  color: var(--vp-c-text);
+  background: var(--vp-c-bg);
+  text-decoration: none;
+  transition:
+    border-color var(--vp-t-color),
+    box-shadow var(--vp-t-color),
+    transform var(--vp-t-transform);
+}
+
+.portfolio-card:hover {
+  border-color: var(--vp-c-accent);
+  box-shadow: 0 0.75rem 1.8rem rgb(0 0 0 / 8%);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.portfolio-card strong {
+  margin: 0.45rem 0;
+  font-size: 1.25rem;
+}
+
+.portfolio-card span:last-child {
+  color: var(--vp-c-text-mute);
+  line-height: 1.65;
+}
+
+.portfolio-card-kicker {
+  color: var(--vp-c-accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.portfolio-card-featured {
+  background: linear-gradient(135deg, var(--vp-c-accent-soft), var(--vp-c-bg) 58%);
+}
+
+.portfolio-card-muted {
+  background: var(--vp-c-bg-soft);
+}
+
+.project-hero-panel {
+  margin: 1rem 0 2rem;
+  padding: 1.35rem 1.5rem;
+  border: 1px solid var(--vp-c-border);
+  border-radius: 8px;
+  background: var(--vp-c-bg-soft);
+}
+
+.project-eyebrow {
+  margin: 0 0 0.45rem;
+  color: var(--vp-c-accent);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.project-lead {
+  margin: 0;
+  color: var(--vp-c-text);
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 1rem 0 0;
+}
+
+.project-actions a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.25rem;
+  padding: 0 0.85rem;
+  border: 1px solid var(--vp-c-border);
+  border-radius: 6px;
+  color: var(--vp-c-text);
+  background: var(--vp-c-bg);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project-actions a:first-child {
+  border-color: var(--vp-c-accent);
+  color: var(--vp-c-accent);
+  background: var(--vp-c-accent-soft);
+}

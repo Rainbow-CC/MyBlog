@@ -5,6 +5,12 @@ export default sidebar({
         // 这里表示主页
         "intro",
         {
+            text: "作品集",
+            icon: "briefcase",
+            prefix: "portfolio/",
+            children: "structure",
+        },
+        {
             text: "技术",
             icon: "book",
             prefix: "posts/tech/",
