@@ -4,6 +4,10 @@
   --sidebar-width: 22rem;
 }
 
+body {
+  height: auto !important;
+}
+
 .el-slider__button {
   &:focus {
     outline: none !important;
