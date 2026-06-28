@@ -1,7 +1,7 @@
 ---
 containerClass: home
 home: true
-layout: BlogHome
+layout: Blog
 icon: house
 title: 主页
 # picture base location is: /src/public/

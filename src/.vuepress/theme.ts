@@ -185,10 +185,9 @@ export default hopeTheme({
       prefix: "fa6-solid:",
     },
 
-    search: {
-      isSearchable: (page) => page.path !== "/",
-      maxSuggestions: 10,
-    }
+    slimsearch: {
+      filter: (page) => page.path !== "/",
+    },
 
     // 如果你需要 PWA。安装 @vuepress/plugin-pwa 并取消下方注释
     // pwa: {
