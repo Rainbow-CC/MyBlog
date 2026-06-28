@@ -16,10 +16,6 @@ projects:
     name: 作品集
     desc: 查看所有项目与作品说明
     link: /portfolio/
-  - icon: utensils
-    name: Cook Book
-    desc: 我的在线食谱作品
-    link: /portfolio/cook-book.html
   - icon: folder-open
     name: 我的Github
     desc: Github repository

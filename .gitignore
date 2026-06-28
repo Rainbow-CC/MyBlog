@@ -7,3 +7,6 @@ src/.vuepress/dist/
 .idea/MyBlog.iml
 .idea/vcs.xml
 .idea/
+*.log
+src/temp/
+temp/

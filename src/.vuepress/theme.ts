@@ -38,7 +38,7 @@ export default hopeTheme({
   blog: {
     description: "后端开发",
     intro: "/intro.html",
-    articlePerPage: 2,
+    articlePerPage: 3,
     medias: {
       // Baidu: "https://example.com",
       BiliBili: "https://space.bilibili.com/7958976",
@@ -164,7 +164,11 @@ export default hopeTheme({
 
   // 在这里配置主题提供的插件
   plugins: {
-    blog: true,
+    blog: {
+      filter: ({ filePathRelative, frontmatter }) =>
+        Boolean(filePathRelative?.startsWith("posts/")) &&
+        frontmatter.article !== false,
+    },
 
     // 启用之前需安装 @waline/client
     // 警告: 这是一个仅供演示的测试服务，在生产环境中请自行部署并使用自己的服务！

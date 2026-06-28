@@ -13,7 +13,17 @@ breadcrumb: false
   <a class="portfolio-card portfolio-card-featured" href="/MyBlog/portfolio/cook-book.html">
     <span class="portfolio-card-kicker">Web App</span>
     <strong>Cook Book</strong>
-    <span>一个在线食谱作品，用于整理菜谱、烹饪步骤和个人实践记录。</span>
+    <span>一个在线食谱，用于整理菜谱、烹饪步骤和个人实践记录。</span>
+  </a>
+  <a class="portfolio-card portfolio-card-featured" href="/MyBlog/portfolio/react-flow-presentation.html">
+    <span class="portfolio-card-kicker">Presentation</span>
+    <strong>React Flow Presentation</strong>
+    <span>一个基于 AI +  React Flow 的演示作品，探索通过AI自动绘制风格统一的技术图片。</span>
+  </a>
+  <a class="portfolio-card portfolio-card-featured" href="/MyBlog/portfolio/annual-report-jiang.html">
+    <span class="portfolio-card-kicker">Presentation</span>
+    <strong>Annual Report</strong>
+    <span>一个年度报告展示作品，探索通过AI+Slidev框架生成高精度、可编辑的ppt汇报。</span>
   </a>
   <a class="portfolio-card portfolio-card-muted" href="https://github.com/Rainbow-CC" target="_blank" rel="noopener noreferrer">
     <span class="portfolio-card-kicker">Repository</span>
@@ -21,13 +31,4 @@ breadcrumb: false
     <span>查看代码仓库，后续作品会逐步补充为独立介绍页。</span>
   </a>
 </div>
-
-## 作品说明模板
-
-后续每个作品建议都保留一篇详情文档，结构保持一致：
-
-- 项目背景：为什么做这个作品，解决什么问题。
-- 功能展示：核心页面、交互流程、上线地址。
-- 技术实现：技术栈、架构选择、关键难点。
-- 复盘总结：做得好的地方、可以继续改进的地方。
 
