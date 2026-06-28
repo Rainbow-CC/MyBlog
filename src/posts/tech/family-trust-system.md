@@ -17,7 +17,7 @@ Following the release of the new trust classification regulations in 2023, the c
 
 The application adopts a frontend-backend separation architecture. The frontend UI is an expansion of the existing family trust business management system, built as a traditional Java web application. The technical stack and key components include Nginx + Keepalived (for high availability), Redis, Spring Cloud Gateway, Eureka, Apollo (for configuration management), and a scheduled job framework. The technical architecture diagram is shown below:
 
-![Technical Architecture Diagram](/assets/business/信托技术架构.png)
+![Family Trust System Architecture](/assets/business/family-trust-architecture.png)
 
 ## System Design Analysis
 
