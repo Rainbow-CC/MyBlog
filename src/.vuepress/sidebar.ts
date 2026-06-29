@@ -35,6 +35,12 @@ export default sidebar({
             children: "structure",
         },
         {
+            text: "游记",
+            icon: "route",
+            prefix: "posts/travel/",
+            children: "structure",
+        },
+        {
             text: "面试",
             icon: "briefcase",
             prefix: "posts/interview/",
