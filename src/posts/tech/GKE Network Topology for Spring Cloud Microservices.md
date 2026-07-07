@@ -167,18 +167,3 @@ Always base your dashboards and alerts on the **Four Golden Signals**:
 7. **Ignoring Resource Requests and Limits**: Failing to configure `resources.requests` and `resources.limits` for JVM workloads, leading to unstable pod scheduling, out-of-memory (OOM) kills, and broken autoscaling.
 8. **Broken Distributed Tracing**: Failing to propagate trace context (like W3C Trace Context or B3 headers) from Spring Cloud Gateway down to downstream microservices, rendering Cloud Trace useless.
 9. **File-based Logging**: Writing log files into the container file system instead of outputting JSON-structured logs directly to `stdout`/`stderr` for Google Cloud Logging to ingest.
-
-## Conclusion & Takeaways
-
-An effective GKE network topology for Spring Cloud microservices successfully separates infrastructure concerns from application-level requirements. By following a structured traffic path (Cloud Load Balancer -> Ingress -> Spring Cloud Gateway -> Microservices), utilizing Kubernetes-native service discovery, locking down internal communication with Network Policies, and routing database traffic privately, you can achieve a highly secure, scalable, and observable cloud-native application.
-
-## Related Notes
-
-* [[Kubernetes]]
-* [[cloud-native/Public Cloud Application Deployment and Monitoring|Public Cloud Application Deployment and Monitoring]]
-* [[java-backend/Spring Cloud to Kubernetes Migration|Spring Cloud to Kubernetes Migration]]
-* [[API Gateway]]
-* [[Load Balancers]]
-* [[Service Discovery]]
-* [[observability/Monitor overview|Monitor overview]]
-* [[observability/Structured Logging|Structured Logging]]
