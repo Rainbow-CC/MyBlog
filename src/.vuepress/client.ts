@@ -6,8 +6,10 @@ import CounterDemo from "./components/CounterDemo.vue";
 import ImageStack from "./components/ImageStack.vue";
 import FrameImage from "./components/FrameImage.vue";
 import CoolCube from "./components/CoolCube.vue";
+import EditorialHome from "./components/EditorialHome.vue";
 
 export default defineClientConfig({
+  layouts: { Home: EditorialHome },
   enhance({ app }) {
     app.use(Antd);
     app.component("G2PieChart", G2PieChart);

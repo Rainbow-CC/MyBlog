@@ -8,6 +8,27 @@ body {
   height: auto !important;
 }
 
+// Editorial homepage: warm paper, ink navy, and restrained amber accents.
+body .home {
+  --bg: #faf8f5 !important;
+  --ink: #16324a !important;
+  --text: #374049 !important;
+  --muted: #57646f !important;
+  --line: #e6e0d4 !important;
+}
+
+body .home .eyebrow,
+body .home .project p,
+body .home .article p { color: #9a6b12; }
+
+body .home .button:hover,
+body .home .contact:hover { border-color: #e9ae3d; background: #e9ae3d; color: #163249; }
+
+body .home .art { background: linear-gradient(135deg, #e7ddcf, #fdfaf4 55%, #d2e0df); }
+body .home .project:nth-child(2) .art { background: linear-gradient(135deg, #172f45, #345b6c 55%, #e9ae3d); }
+body .home .project:nth-child(3) .art { background: linear-gradient(135deg, #e9ae3d, #f7e4b4 50%, #8ca0a2); }
+body .home .art::before { border-color: rgb(22 50 73 / 38%); }
+
 .el-slider__button {
   &:focus {
     outline: none !important;
