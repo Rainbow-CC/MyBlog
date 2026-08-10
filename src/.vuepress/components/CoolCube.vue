@@ -30,7 +30,7 @@ onMounted(() => {
 
     // 遍历查找包含目标文本的卡片
     for (const card of Array.from(candidates)) {
-      if (card.textContent && card.textContent.includes('文章列表')) {
+      if (card.textContent && card.textContent.includes('Articles')) {
         targetCard = card as HTMLElement;
         break;
       }

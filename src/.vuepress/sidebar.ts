@@ -5,19 +5,19 @@ export default sidebar({
         // 这里表示主页
         "intro",
         {
-            text: "作品集",
+            text: "Portfolio",
             icon: "briefcase",
             prefix: "portfolio/",
             children: "structure",
         },
         {
-            text: "技术",
+            text: "Technology",
             icon: "book",
             prefix: "posts/tech/",
             children: "structure",
         },
         {
-            text: "英语学习",
+            text: "English Learning",
             icon: "language",
             prefix: "posts/English/",
             children: "structure",
@@ -35,13 +35,13 @@ export default sidebar({
             children: "structure",
         },
         {
-            text: "游记",
+            text: "Travel",
             icon: "route",
             prefix: "posts/travel/",
             children: "structure",
         },
         {
-            text: "面试",
+            text: "Interviews",
             icon: "briefcase",
             prefix: "posts/interview/",
             children: "structure",

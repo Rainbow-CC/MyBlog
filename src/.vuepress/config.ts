@@ -8,8 +8,8 @@ import {searchPlugin} from "@vuepress/plugin-search";
 export default defineUserConfig({
   base: "/MyBlog/",
 
-  lang: "zh-CN",
-  title: "橙子的博客",
+  lang: "en-US",
+  title: "Rainbow's Blog",
   description: "",
   theme,
 

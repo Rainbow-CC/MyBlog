@@ -29,14 +29,14 @@ export default hopeTheme({
   sidebar,
 
   // 页脚
-  footer: "要快乐~",
+  footer: "Be happy~",
   displayFooter: true,
 
   editLink: false,
 
   // 博客相关
   blog: {
-    description: "后端开发",
+    description: "Backend Developer",
     intro: "/intro.html",
     articlePerPage: 3,
     medias: {
@@ -84,9 +84,9 @@ export default hopeTheme({
     },
   },
 
-  // 多语言配置
+  // Localization settings
   metaLocales: {
-    editLink: "在 GitHub 上编辑此页",
+    editLink: "Edit this page on GitHub",
   },
 
   // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响

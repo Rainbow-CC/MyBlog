@@ -3,7 +3,7 @@ containerClass: home
 home: true
 layout: Blog
 icon: house
-title: 主页
+title: Home
 # picture base location is: /src/public/
 bgImage: /assets/images/cover4.jpg
 # heroImage: /assets/images/backimage.jpg
@@ -13,16 +13,16 @@ tagline: keep loving, keep moving
 
 projects:
   - icon: briefcase
-    name: 作品集
-    desc: 查看所有项目与作品说明
+    name: Portfolio
+    desc: Explore all projects and project details
     link: /portfolio/
   - icon: folder-open
-    name: 我的Github
+    name: My GitHub
     desc: Github repository
     link: https://github.com/Rainbow-CC
   - icon: folder-open
-    name: 文章列表
-    desc: 本站文章
+    name: Articles
+    desc: Browse all articles
     link: /posts/
 
 highlights:
@@ -31,31 +31,31 @@ highlights:
     bgImage: https://theme-hope-assets.vuejs.press/bg/3-light.svg
     bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
     highlights:
-      - title: 运行 <code>pnpm create vuepress-theme-hope hope-project</code> 以创建一个新的主题项目。
-      - title: 在已有项目根目录下运行 <code>pnpm create vuepress-theme-hope add .</code> 以在项目中添加主题。
+      - title: Run <code>pnpm create vuepress-theme-hope hope-project</code> to create a new themed project.
+      - title: Run <code>pnpm create vuepress-theme-hope add .</code> in an existing project root to add the theme.
 
 #
 #  - icon: book
-#    name: 书籍名称
-#    desc: 书籍详细描述
-#    link: https://你的书籍链接
+#    name: Book Title
+#    desc: Detailed book description
+#    link: https://your-book-link
 #
 #  - icon: newspaper
-#    name: 文章名称
-#    desc: 文章详细描述
-#    link: https://你的文章链接
+#    name: Article Title
+#    desc: Detailed article description
+#    link: https://your-article-link
 #
 #  - icon: user-group
-#    name: 伙伴名称
-#    desc: 伙伴详细介绍
-#    link: https://你的伙伴链接
+#    name: Partner Name
+#    desc: Detailed partner introduction
+#    link: https://your-partner-link
 #
 #  - icon: https://theme-hope-assets.vuejs.press/logo.svg
-#    name: 自定义项目
-#    desc: 自定义详细介绍
-#    link: https://你的自定义链接
+#    name: Custom Project
+#    desc: Detailed custom project description
+#    link: https://your-custom-project-link
 
-footer: 人生得意需尽欢
+footer: Live life to the fullest
 ---
 
 <CoolCube />
