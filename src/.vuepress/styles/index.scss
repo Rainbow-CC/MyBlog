@@ -29,6 +29,39 @@ body .home .project:nth-child(2) .art { background: linear-gradient(135deg, #172
 body .home .project:nth-child(3) .art { background: linear-gradient(135deg, #e9ae3d, #f7e4b4 50%, #8ca0a2); }
 body .home .art::before { border-color: rgb(22 50 73 / 38%); }
 
+// Shared homepage text-link interaction. The page uses a light paper
+// background, so amber provides a visible, consistent hover treatment.
+body .home .nav nav a:hover,
+body .home .heading > a:hover,
+body .home .article:hover h3,
+body .home .project:hover h3,
+body .home .closing a:hover,
+body .home footer a:hover {
+  color: #9a6b12;
+}
+
+// Experience metadata needs to be readable at a glance. Use a conventional
+// sans-serif face instead of the compact monospace labels used elsewhere.
+body .home .eyebrow,
+body .home .period,
+body .home .role,
+body .home .heading > span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+body .home .article p,
+body .home .article time {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+}
+
 .el-slider__button {
   &:focus {
     outline: none !important;
