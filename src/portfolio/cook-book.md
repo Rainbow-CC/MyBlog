@@ -1,7 +1,7 @@
 ---
 title: Cook Book
 icon: utensils
-order: 1
+order: 2
 breadcrumb: false
 ---
 

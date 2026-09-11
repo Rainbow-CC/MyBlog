@@ -10,6 +10,11 @@ breadcrumb: false
 This is where I share the websites, tools, and experimental projects I have created. The homepage features selected work; each project page provides more context, design thinking, and technical decisions.
 
 <div class="portfolio-grid">
+  <a class="portfolio-card portfolio-card-featured" href="/MyBlog/portfolio/docguard.html">
+    <span class="portfolio-card-kicker">AI · Document Intelligence</span>
+    <strong>DocGuard</strong>
+    <span>An evidence-first audit agent that turns DOCX prose, tables, and architecture diagrams into traceable findings.</span>
+  </a>
   <a class="portfolio-card portfolio-card-featured" href="/MyBlog/portfolio/cook-book.html">
     <span class="portfolio-card-kicker">Web App</span>
     <strong>Cook Book</strong>
