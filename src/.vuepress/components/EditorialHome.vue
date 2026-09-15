@@ -88,7 +88,7 @@ const education = [
             <section id="experience" class="section experience">
                 <div class="heading">
                     <p class="eyebrow">03 / Experience</p>
-                    <h2>Building systems<br>that need to last.</h2><span>Financial systems · Backend engineering</span>
+                    <h2>My work and education</h2><span>Financial systems · Backend engineering</span>
                 </div>
                 <ol class="experience-list">
                     <li v-for="item in experience" :key="item.company">
@@ -486,10 +486,10 @@ h1 {
 
 .experience-list ul li {
     padding: .35rem .55rem;
-    border: 1px solid var(--line);
+    border: 1.5px solid var(--line);
     color: var(--muted);
     font-family: ui-monospace, monospace;
-    font-size: .67rem;
+    font-size: .90rem;
 }
 
 
